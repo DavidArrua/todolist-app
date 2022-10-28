@@ -9,7 +9,7 @@ function TaskList(props) {
   return (
     <div>
       {props.tasks.map((task) => (
-        <TaskCard key={task.id} task={task}/>
+        <TaskCard key={task.id} task={task} deleteTask={props.deleteTask}/>
       ))}
     </div>
   );
