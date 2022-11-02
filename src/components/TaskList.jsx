@@ -11,7 +11,7 @@ function TaskList() {
   }
 
   return (
-    <div>
+    <div className="task-list d-flex flex-wrap gap-2 justify-content-center">
       {tasks.map((task) => (
         <TaskCard key={task.id} task={task}/>
       ))}

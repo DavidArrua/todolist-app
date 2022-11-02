@@ -1,0 +1,16 @@
+form{
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+}
+
+.task-list{
+    width: 1000px;
+}
+.card_{
+    width: 320px;
+    height: 180px;
+    border-radius: 8px;
+    background-color: rgb(117, 145, 237);
+}
+

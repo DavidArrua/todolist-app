@@ -19,7 +19,10 @@ function TaskForm() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        className="d-flex flex-column gap-4 justify-content-center container"
+      >
         <input
           type="text"
           placeholder="Titulo de la tarea"
@@ -34,7 +37,13 @@ function TaskForm() {
           onChange={(e) => setDescription(e.target.value)}
           value={description}
         ></textarea>
-        <button>Guardar</button>
+        <div>
+          {title == "" || description == ""? (
+            <div className="btn btn-danger w-100">Guardar</div>
+          ) : (
+            <button className="btn btn-primary w-100">Guardar</button>
+          )}
+        </div>
       </form>
     </div>
   );
